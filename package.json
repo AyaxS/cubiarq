@@ -1,0 +1,26 @@
+{
+  "name": "cubiarq",
+  "version": "1.0.0",
+  "description": "Sitio web de  servicios de cubicacion y arquitectura",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyaxS/cubiarq.git"
+  },
+  "keywords": [
+    "cubicacion",
+    "arquitectura"
+  ],
+  "author": "Christopher Lara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AyaxS/cubiarq/issues"
+  },
+  "homepage": "https://github.com/AyaxS/cubiarq#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
