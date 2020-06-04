@@ -5,22 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
     <title>Cubiarq</title>
 </head>
 <body>
     <section>
-        <div class="cub_home-content" id="particles-js">
+        <div class="cub_home-content auto--height" id="particles-js">
             <canvas></canvas>
             <div class="home-content">
                 <div class="container">
                     <img class="cubi--logo" src="/assets/img/cubiarq-7.png" alt="">
                     <h1 class="cubi--titulo">Cubicación y arquitectura</h1>
                     <p class="cubi--texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cubi_card-content auto--height">
+            <div class="cubi_background paper-1"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="cubi_card">
+                            <div class="person ingeniero">
+                                <img src="./assets/img/ingeniero.jpg" alt="Ingenieria y cubicacion">
+                            </div>
+                            <h2 class="person-nombre">Mauricio Lara Olivares</h2>
+                            <p class="person-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at vel, consequatur voluptas fugiat minus adipisci officia esse quae quo, cum suscipit quod, recusandae dicta totam earum cupiditate molestiae dolorum.</p>
+                            <!--Contenido curricular Mauricio Lara-->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mauricio">
+                                Experiencia
+                            </button>
+                            <div class="modal fade" id="mauricio" tabindex="-1" role="dialog" aria-labelledby="mauricioTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="mauricioTitle">Experiencia</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cubi_card">
+                            <div class="person arquitecto">
+                                <img src="./assets/img/arquitecto.jpg" alt="Arquitectura y cubicacions">
+                            </div>
+                            <h2 class="person-nombre">Alexis de la Fuente</h2>
+                            <p class="person-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at vel, consequatur voluptas fugiat minus adipisci officia esse quae quo, cum suscipit quod, recusandae dicta totam earum cupiditate molestiae dolorum.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexis">
+                                Experiencia
+                            </button>
+                            <div class="modal fade" id="alexis" tabindex="-1" role="dialog" aria-labelledby="alexisTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="alexisTitle">Modal title 2</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cubi_contact-content auto--height">
+            <div class="cubi_background paper-2"></div>
+            <div class="cubi_contact">
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

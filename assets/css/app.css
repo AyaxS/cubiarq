@@ -53,3 +53,136 @@ html {
   align-items: center;
   text-align: center;
 }
+
+.cubi_card-content {
+  position: relative;
+  display: block;
+  padding: 100px 0px;
+}
+
+.cubi_card-content .cubi_card {
+  padding: 0px;
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.cubi_card-content .cubi_card .person {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #fff;
+  border-radius: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.cubi_card-content .cubi_card .person img {
+  visibility: hidden;
+}
+
+.cubi_card-content .cubi_card .person.ingeniero {
+  background: url("../img/ingeniero.jpg") no-repeat #000;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cubi_card-content .cubi_card .person.arquitecto {
+  background: url("../img/arquitecto.jpg") no-repeat #000;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cubi_card-content .cubi_card .person-nombre {
+  padding: 20px 0px;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 1px 3px 4px black;
+}
+
+.cubi_card-content .cubi_card .person-descripcion {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 3px 4px black;
+  padding: 0px 0px 20px 0px;
+}
+
+.cubi_card-content .cubi_card button {
+  background-color: #fff;
+  color: #000;
+  border: 0px;
+}
+
+.cubi_card-content .cubi_card button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.cubi_card-content .cubi_card button:active {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 0px !important;
+}
+
+.cubi_background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.cubi_background.paper-1 {
+  background: url("../img/paper-1.jpg") no-repeat #000;
+}
+
+.cubi_background.paper-2 {
+  background: url("../img/contacto.jpg") no-repeat #000;
+}
+
+.cubi_background:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cubi_contact-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cubi_contact-content .cubi_contact {
+  position: relative;
+  display: block;
+  width: 100%;
+}
