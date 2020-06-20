@@ -10,28 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/a01b766d00.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
     <title>Cubiarq</title>
 </head>
 <body>
-    <section>
+    <section id="inicio">
         <div class="cub_home-content auto--height" id="particles-js">
-            <canvas></canvas>
+            <div class="cubi_content-menu">
+                <div class="container">
+                    <ul class="cubi-menu">
+                        <li><a href="index.html"><img class="cubi--logo" src="/assets/img/logo/cubi-arq-7.png" alt=""></a></li>
+                        <li><a class="ancla" href="#inicio">Inicio</a></li>
+                        <li><a class="ancla" href="#equipo">Equipo</a></li>
+                        <li><a class="ancla" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="home-content">
                 <div class="container">
-                    <img class="cubi--logo" src="/assets/img/cubiarq-7.png" alt="">
                     <h1 class="cubi--titulo">Cubicación y arquitectura</h1>
                     <p class="cubi--texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
+            <canvas></canvas>
         </div>
     </section>
-    <section>
+    <section id="equipo">
         <div class="cubi_card-content auto--height">
             <div class="cubi_background paper-1"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">  
+                    <div class="col-md-6 animate">  
                         <div class="cubi_card">
                             <div class="person ingeniero">
                                 <img src="./assets/img/ingeniero.jpg" alt="Ingenieria y cubicacion">
@@ -62,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 animate">
                         <div class="cubi_card">
                             <div class="person arquitecto">
                                 <img src="./assets/img/arquitecto.jpg" alt="Arquitectura y cubicacions">
@@ -97,25 +107,66 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contacto">
         <div class="cubi_contact-content auto--height">
-            <div class="cubi_background paper-2"></div>
-            <div class="cubi_contact">
-                <div class="container">
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
+            <div class="cubi_background paper-2">
+            <form action="./envia.php" method="post">
+                <div class="cubi_contact animate">
+                    <h2 class="cubi_contact-title">¡Pongase en contacto con nosotros!</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre:</label>
+                                    <input name="nombre" type="text" class="form-control" id="nombre">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="tel">Teléfono:</label>
+                                    <input name="telefono" type="number" class="form-control" id="tel">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Su email</label>
+                                    <input name="email" type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="asunto">Asunto del mensaje</label>
+                                    <select name="asunto" class="form-control" id="asunto">
+                                        <option>Asesoria</option>
+                                        <option>Presupuesto de obras</option>
+                                        <option>Cubicación</option>
+                                        <option>Arquitectura</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea name="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-default">Enviar consulta</button>  
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd">
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="cubi_copyright-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copy">CUBIARQ - Copyright © 2020  | Todos los derechos reservados.</p>
+                    </div>
                 </div>
             </div>
         </div>

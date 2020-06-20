@@ -54,6 +54,52 @@ html {
   text-align: center;
 }
 
+.cubi_content-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: solid 1px #000;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.cubi_content-menu .cubi-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0;
+  height: 80px;
+}
+
+.cubi_content-menu .cubi-menu li {
+  list-style: none;
+  padding: 0px 35px;
+}
+
+.cubi_content-menu .cubi-menu li img {
+  width: 65%;
+}
+
+.cubi_content-menu .cubi-menu li a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.cubi_content-menu .cubi-menu li a:hover {
+  color: rgba(255, 254, 0, 0.5);
+}
+
 .cubi_card-content {
   position: relative;
   display: block;
@@ -79,8 +125,8 @@ html {
 }
 
 .cubi_card-content .cubi_card .person {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: solid 1px #fff;
   border-radius: 100%;
   background-color: #fff;
@@ -141,10 +187,19 @@ html {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   z-index: 0;
 }
 
@@ -179,10 +234,93 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #fff;
 }
 
 .cubi_contact-content .cubi_contact {
   position: relative;
   display: block;
   width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.cubi_contact-content .cubi_contact .cubi_contact-title {
+  padding: 15px 0px;
+}
+
+.cubi_contact-content .cubi_contact .form-control {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+}
+
+.cubi_contact-content .cubi_contact button {
+  background-color: rgba(255, 254, 0, 0.5);
+  color: #fff;
+  margin: 15px 0px;
+}
+
+.cubi_copyright-content {
+  background: #141111;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cubi_copyright-content .copy {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate {
+  visibility: hidden;
+}
+
+.animate-in {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: visible;
 }
