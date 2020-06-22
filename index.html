@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/a01b766d00.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
     <title>Cubiarq</title>
 </head>
@@ -23,6 +25,8 @@
                         <li><a href="index.html"><img class="cubi--logo" src="/assets/img/logo/cubi-arq-7.png" alt=""></a></li>
                         <li><a class="ancla" href="#inicio">Inicio</a></li>
                         <li><a class="ancla" href="#equipo">Equipo</a></li>
+                        <li><a class="ancla" href="#proyectos">Proyectos</a></li>
+                        <li><a class="ancla" href="#clientes">Clientes</a></li>
                         <li><a class="ancla" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -30,7 +34,7 @@
             <div class="home-content">
                 <div class="container">
                     <h1 class="cubi--titulo">Cubicación y arquitectura</h1>
-                    <p class="cubi--texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="cubi--texto">Somos un equipo de profesionales especializados en corte, doblado e instalación de enfierradura de obras de construcción de distinta envergadura destacando el área de edificación en altura, hospitalaria y en el área de transporte "Metro de Santiago"</p>
                 </div>
             </div>
             <canvas></canvas>
@@ -41,31 +45,76 @@
             <div class="cubi_background paper-1"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 animate">  
+                    <!--<div class="col-md-8 offset-md-2 animate">-->
+                    <div class="col-md-6 animate">
                         <div class="cubi_card">
                             <div class="person ingeniero">
-                                <img src="./assets/img/ingeniero.jpg" alt="Ingenieria y cubicacion">
+                                <img src="./assets/img/perfil/mauricio-lara.jpeg" alt="Ingenieria y cubicacion">
                             </div>
                             <h2 class="person-nombre">Mauricio Lara Olivares</h2>
-                            <p class="person-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at vel, consequatur voluptas fugiat minus adipisci officia esse quae quo, cum suscipit quod, recusandae dicta totam earum cupiditate molestiae dolorum.</p>
+                            <p class="person-descripcion">Especialista en obra gruesa, con más de 25 años de experiencia he logrado liderar proyectos de gran envergadura a lo largo de mi carrera, obteniendo una basta experiencia en terreno y satisfacción por obra terminado.</p>
                             <!--Contenido curricular Mauricio Lara-->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mauricio">
                                 Experiencia
                             </button>
-                            <div class="modal fade" id="mauricio" tabindex="-1" role="dialog" aria-labelledby="mauricioTitle" aria-hidden="true">
+                            <div class="modal fade cubi--modal" id="mauricio" tabindex="-1" role="dialog" aria-labelledby="mauricioTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="mauricioTitle">Experiencia</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <h3 class="cubi-exp-titulo">Introducción</h3>
+                                            <p class="cubi-exp-intro">Especialista en obra gruesa, con más de 25 años de experiencia he logrado liderar proyectos de gran envergadura a lo largo de mi carrera, obteniendo una basta experiencia en terreno y satisfacción por obra terminado.</p>
+                                            <h3 class="cubi-exp-titulo">Proyectos Liderados</h3>
+                                            <ul class="cubi-exp-lista">
+                                                <li><strong>&bull; Año 1995</strong> supervisor de enfierradura, edificio Alsacia 100. Altura 22 pisos, aproximadamente (590.000 mil kilos). Constructora San José Miguel Jorquera.</li>
+                                                <li><strong>&bull; Año 1996</strong> Sub-Contrato Media luna de Rancagua, total (155.000 mil kilos) Constructora LIRA Y CORP.</li>
+                                                <li><strong>&bull; Año 1996 - 1997</strong> Supervisor de enfierradura, condominio ROCAS SANTO DOMINGO total (120.000 mil kilos), constructora EBCO LTDA.</li>
+                                                <li><strong>&bull; Año 1997</strong> Sub Contrato en obra CLUB HOUSE, total (124.000 mil kilos), Constructora IDROSAN LTDA.</li>
+                                                <li><strong>&bull; Año 1998</strong> Supervisor de enfierradura edificio PLAZA REAL, ciudad de Copiapó. Total (740.000 mil kilos), Constructora BESALCO LTDA.</li>
+                                                <li><strong>&bull; Año 1999</strong> Supervisor de enfierradura obra CLINICA SANTA MARIA, total (1.552.000 mil kilos), Constructora COSAL LTDA.</li>
+                                                <li><strong>&bull; Año 2000</strong> Supervisor de enfierradura obra estación PLAZA PERU, total (840.000 mil kilos), Constructora FUCH LTDA.</li>
+                                                <li><strong>&bull; Año 2001</strong> Supervisor en enfierradura CIUDAD EMPRESARIAL 3 edificios, total (1.840.000 mil kilos).</li>
+                                            </ul>
+                                            <h3 class="cubi-exp-titulo">Obras Cubicadas</h3>
+                                            <ul class="cubi-exp-lista">
+                                                <li><strong>&bull; Cuidad empresarial</strong> (1.843 toneladas), Constructora FUCH LTDA.</li>
+                                                <li><strong>&bull; Mutual de seguridad ACHS</strong> (70.263 mil kilos), Constructora ISA LTDA.</li>
+                                                <li><strong>&bull; Colegio BEADFOR</strong> (69.889 mil kilos), Constructora INGEVAC.</li>
+                                                <li><strong>&bull; Colegio CALAZAN</strong> (72.876 mil kilos), Constructora CALASAD.</li>
+                                                <li><strong>&bull; Edificio MANUEL DE SALAS</strong> (90.876 mil kilos), Constructora CIPCO.</li>
+                                                <li><strong>&bull; Edificio EL QUILLAY</strong> (79.843 mil kilos), Constructora FUSH LTDA.</li>
+                                                <li><strong>&bull; Edificio COLON</strong> (889.964 mil kilos), Constructora CARLOS ESTEYMAN.</li>
+                                                <li><strong>&bull; Edificio OCODELL</strong> (890.843 mil kilos), Constructora NDS LTDA.</li>
+                                                <li><strong>&bull; Estación PLAZA PERU</strong> (840.000 mil kilos), Constructora COSAL LTDA.</li>
+                                                <li><strong>&bull; Clínica SANTA MARIA</strong> (1.552 toneladas), Constructora BESALCO LTDA.</li>
+                                                <li><strong>&bull; Edificio M.T.S</strong> (254.326 mil kilos), Constructora M.T.S.</li>
+                                            <h3 class="cubi-exp-titulo">Obras realizadas como sub contrato en enfierradura 2004 al 2013</h3>
+                                            <ul class="cubi-exp-lista">
+                                                <li><strong>&bull; Obra estanque el PERAL</strong> (43.300 mil kilos), cortado e instalado AGUAS ANDINAS como sub-contrato, Constructora COSAL. LTDA.</li>
+                                                <li><strong>&bull; Obra acueducto de aguas lluvias</strong> (68.000 mil kilos), cortado, doblado e instalado en AGUAS ANDINAS como sub contrato. Total 14 cámaras y estanques para Constructora COSAL LTDA de reciclajes para aguas lluvias en TIL-TIL constructora COSAL. LTDA.</li>
+                                                <li><strong>&bull; Obra AGUAS ANDINAS</strong> (73.000 mil kilos), cortado, doblado e instalado para AGUAS ANDINAS, como Sub-contrato para proyecto estanque de regulación y copa de agua, Constructora COSAL. LTDA.</li>
+                                                <li><strong>&bull; Edificio Fiscalía</strong> (1.930.000 mil kilos), fierro cortado, doblado e instalado para TRIBUNALES de JUSTICIA, como Sub-contrato constructora O.H.L.</li>
+                                                <li><strong>&bull; Terminal de buses SUBUS CHILE</strong> (340.000 mil kilos), fierro cortado, doblado e instalado, avenida Recoleta e Independencia como Sub-contrato.</li>
+                                                <li><strong>&bull; Trabajos realizados para AMO &amp; CIA S.A.</strong> Minería y movimientos de tierra en Construcción de fundaciones para planta de áridos.</li>
+                                                <li><strong>&bull; Edificio VILLAGRAN</strong> # 45 Altura 23 pisos. Constructora KRT (480.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                                <li><strong>&bull; Edificio IRRARAZABAL</strong> #3380 Altura 25 pisos. Constructora PAZ P2K (660.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                                <li><strong>&bull; Edificio TERRAZA BULNES</strong> #217 Altura 24 pisos. Constructora PAZ P2K (630.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                                <li><strong>&bull; Edificio JUZGADO DE SANTA CRUZ</strong> (105.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
+                                                <li><strong>&bull; Edificio JUZGADO DE CURICO</strong> (126.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
+                                                <li><strong>&bull; Planta de pasta CAROZZI BUIN</strong> (1.630.000 mil kilos) fierro instalado, Constructora INGEVEC.</li>
+                                                <li><strong>&bull; Edificio UNIVERSIDAD DE CHILE</strong> Santiago (1573 toneladas) fierro instalado, Constructora INGEVEC.</li>
+                                                <li><strong>&bull; Edificio TEATRO REGIONAL DE RANCAGUA</strong> (123.000 mil kilos), fierro cortado, doblado e instalado. Constructora INGEVEC.</li>
+                                                <li><strong>&bull; Edificio ilustré MUNICIPALIDAD DE SAN FERNANDO</strong> (124.000 mil kilos) fierro cortado doblado e instalado. Constructora COSAL. LTDA</li>
+                                                <li><strong>&bull; Edificio departamento MUJICA</strong> (350.000 mil kilos), Constructora e inmobiliaria MAGAL S.A. edificio departamentos.</li>
+                                                <li><strong>&bull; Edificio de Oncología hospital Roberto de Rio</strong> (120 mil kilos) constructora (BYC) LTDA.</li>
+                                            </ul>
+                                            <br>
+                                            <img style="width: 100%;" src="assets/img/certificados/certificado-mauricio-lara.png" alt="">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -79,24 +128,20 @@
                             </div>
                             <h2 class="person-nombre">Alexis de la Fuente</h2>
                             <p class="person-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at vel, consequatur voluptas fugiat minus adipisci officia esse quae quo, cum suscipit quod, recusandae dicta totam earum cupiditate molestiae dolorum.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexis">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexiss">
                                 Experiencia
                             </button>
                             <div class="modal fade" id="alexis" tabindex="-1" role="dialog" aria-labelledby="alexisTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="alexisTitle">Modal title 2</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                            <h5 class="modal-title" id="alexisTitle">Experiencia</h5>
                                         </div>
                                         <div class="modal-body">
                                             ...
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -107,12 +152,26 @@
             </div>
         </div>
     </section>
+    <section id="clientes">
+        <div class="cubi-clientes">
+            <div class="cubi_background paper-3"></div>
+            <div class="container">
+                <h2 class="clientes--titulo">Empresas en la que hemos trabajado</h2>
+                <div class="carousel-clientes">
+                    <div>Metro de Santiago</div>
+                    <div>Constructora COSAL</div>
+                    <div>Paz Froimovich</div>
+                    <div>Metro de Santiago</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contacto">
         <div class="cubi_contact-content auto--height">
             <div class="cubi_background paper-2">
             <form action="./envia.php" method="post">
                 <div class="cubi_contact animate">
-                    <h2 class="cubi_contact-title">¡Pongase en contacto con nosotros!</h2>
+                    <h2 class="cubi_contact-title">¿Necesita ayuda? Cotice o asesosrece con nosotros...</h2>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">

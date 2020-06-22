@@ -63,5 +63,19 @@ $( document ).ready(function() {
 	        init();
 	    }
 	})( jQuery );
-  $.animate();
+	$.animate();
+
+	$('.carousel-clientes').slick({
+		arrows: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        prevArrow: '<span class="slick-prev"><img src="./assets/img/arrow-left.png" alt=""></span>',
+      	nextArrow: '<span class="slick-next"><img src="./assets/img/arrow-right.png" alt=""></span>',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+  		autoplaySpeed: 5000,
+		//fade: false,
+		dots: false
+	});
 });

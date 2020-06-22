@@ -12,6 +12,7 @@ html {
   color: #fff;
   font-weight: 300;
   text-shadow: 1px 3px 4px black;
+  padding-bottom: 20px;
 }
 
 .cubi--texto {
@@ -52,6 +53,10 @@ html {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+
+.auto--height {
+  border-bottom: solid 2px #000;
 }
 
 .cubi_content-menu {
@@ -97,7 +102,7 @@ html {
 }
 
 .cubi_content-menu .cubi-menu li a:hover {
-  color: rgba(255, 254, 0, 0.5);
+  color: #DFB805;
 }
 
 .cubi_card-content {
@@ -127,8 +132,8 @@ html {
 .cubi_card-content .cubi_card .person {
   width: 250px;
   height: 250px;
-  border: solid 1px #fff;
-  border-radius: 100%;
+  border: solid 2px rgba(255, 255, 255, 0.9);
+  border-radius: 0%;
   background-color: #fff;
   overflow: hidden;
 }
@@ -138,8 +143,7 @@ html {
 }
 
 .cubi_card-content .cubi_card .person.ingeniero {
-  background: url("../img/ingeniero.jpg") no-repeat #000;
-  background-position: center center;
+  background: url("../img/perfil/mauricio-lara-2.jpeg") no-repeat #000;
   background-size: cover;
 }
 
@@ -154,6 +158,7 @@ html {
   color: #fff;
   font-size: 30px;
   text-shadow: 1px 3px 4px black;
+  width: 100%;
 }
 
 .cubi_card-content .cubi_card .person-descripcion {
@@ -179,6 +184,45 @@ html {
   background-color: #fff !important;
   color: #000 !important;
   border: 0px !important;
+}
+
+.cubi-clientes {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 200px;
+  border-bottom: solid 2px #000;
+}
+
+.cubi-clientes .clientes--titulo {
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 1px 3px 4px black;
+  padding: 40px 0px 40px 0px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.cubi-clientes .carousel-clientes {
+  color: #fff;
+}
+
+.cubi-clientes .carousel-clientes > div {
+  text-align: center;
+}
+
+.cubi-clientes .carousel-clientes .slick-prev {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.cubi-clientes .carousel-clientes .slick-next {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  cursor: pointer;
 }
 
 .cubi_background {
@@ -209,6 +253,11 @@ html {
 
 .cubi_background.paper-2 {
   background: url("../img/contacto.jpg") no-repeat #000;
+}
+
+.cubi_background.paper-3 {
+  background: url("../img/santiago-chile.jpg") no-repeat #000;
+  z-index: -1;
 }
 
 .cubi_background:before {
@@ -250,6 +299,7 @@ html {
 }
 
 .cubi_contact-content .cubi_contact .cubi_contact-title {
+  font-size: 16px;
   padding: 15px 0px;
 }
 
@@ -323,4 +373,33 @@ html {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   visibility: visible;
+}
+
+.modal-backdrop.show {
+  z-index: -1;
+}
+
+.cubi--modal {
+  text-align: left;
+}
+
+.cubi--modal .modal-title {
+  font-size: 16px;
+}
+
+.cubi--modal .cubi-exp-intro {
+  font-size: 12px;
+}
+
+.cubi--modal .cubi-exp-titulo {
+  font-size: 16px;
+}
+
+.cubi--modal .cubi-exp-lista {
+  padding: 0px;
+}
+
+.cubi--modal .cubi-exp-lista li {
+  font-size: 12px;
+  list-style: none;
 }
