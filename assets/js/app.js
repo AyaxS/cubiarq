@@ -78,4 +78,34 @@ $( document ).ready(function() {
 		//fade: false,
 		dots: false
 	});
+
+	$('.content-gallery').slick({
+		arrows: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        prevArrow: '<span class="slick-prev"><img src="./assets/img/arrow-left.png" alt=""></span>',
+      	nextArrow: '<span class="slick-next"><img src="./assets/img/arrow-right.png" alt=""></span>',
+		centerMode: true,
+		centerPadding: '120px',
+		slidesToShow: 1,
+		responsive: [
+		  {
+			breakpoint: 768,
+			settings: {
+			  arrows: false,
+			  centerMode: true,
+			  centerPadding: '120px',
+			  slidesToShow: 1
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  arrows: false,
+			  centerMode: true,
+			  centerPadding: '120px',
+			  slidesToShow: 1
+			}
+		  }
+		]
+	});
 });

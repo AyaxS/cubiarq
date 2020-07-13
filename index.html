@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/app.css" />
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="./assets/js/photoswipe.js"></script> 
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -41,8 +45,8 @@
             <canvas></canvas>
         </div>
     </section>
-    <section id="equipo">
-        <div class="cubi_card-content auto--height">
+    <section id="equipo">   
+        <div class="cubi_card-content auto--height"> 
             <div class="cubi_background paper-1"></div>
             <div class="container">
                 <div class="row">
@@ -56,98 +60,234 @@
                             <p class="person-descripcion">Especialista en obra gruesa, con más de 25 años de experiencia he logrado liderar proyectos de gran envergadura a lo largo de mi carrera, obteniendo una basta experiencia en terreno y satisfacción por obra terminado.</p>
                             <!--Contenido curricular Mauricio Lara-->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mauricio">
-                                Experiencia
+                                Ver Trayectoria
                             </button>
-                            <div class="modal fade cubi--modal" id="mauricio" tabindex="-1" role="dialog" aria-labelledby="mauricioTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="mauricioTitle">Experiencia</h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h3 class="cubi-exp-titulo">Introducción</h3>
-                                            <p class="cubi-exp-intro">Especialista en obra gruesa, con más de 25 años de experiencia he logrado liderar proyectos de gran envergadura a lo largo de mi carrera, obteniendo una basta experiencia en terreno y satisfacción por obra terminado.</p>
-                                            <h3 class="cubi-exp-titulo">Proyectos Liderados</h3>
-                                            <ul class="cubi-exp-lista">
-                                                <li><strong>&bull; Año 1995</strong> supervisor de enfierradura, edificio Alsacia 100. Altura 22 pisos, aproximadamente (590.000 mil kilos). Constructora San José Miguel Jorquera.</li>
-                                                <li><strong>&bull; Año 1996</strong> Sub-Contrato Media luna de Rancagua, total (155.000 mil kilos) Constructora LIRA Y CORP.</li>
-                                                <li><strong>&bull; Año 1996 - 1997</strong> Supervisor de enfierradura, condominio ROCAS SANTO DOMINGO total (120.000 mil kilos), constructora EBCO LTDA.</li>
-                                                <li><strong>&bull; Año 1997</strong> Sub Contrato en obra CLUB HOUSE, total (124.000 mil kilos), Constructora IDROSAN LTDA.</li>
-                                                <li><strong>&bull; Año 1998</strong> Supervisor de enfierradura edificio PLAZA REAL, ciudad de Copiapó. Total (740.000 mil kilos), Constructora BESALCO LTDA.</li>
-                                                <li><strong>&bull; Año 1999</strong> Supervisor de enfierradura obra CLINICA SANTA MARIA, total (1.552.000 mil kilos), Constructora COSAL LTDA.</li>
-                                                <li><strong>&bull; Año 2000</strong> Supervisor de enfierradura obra estación PLAZA PERU, total (840.000 mil kilos), Constructora FUCH LTDA.</li>
-                                                <li><strong>&bull; Año 2001</strong> Supervisor en enfierradura CIUDAD EMPRESARIAL 3 edificios, total (1.840.000 mil kilos).</li>
-                                            </ul>
-                                            <h3 class="cubi-exp-titulo">Obras Cubicadas</h3>
-                                            <ul class="cubi-exp-lista">
-                                                <li><strong>&bull; Cuidad empresarial</strong> (1.843 toneladas), Constructora FUCH LTDA.</li>
-                                                <li><strong>&bull; Mutual de seguridad ACHS</strong> (70.263 mil kilos), Constructora ISA LTDA.</li>
-                                                <li><strong>&bull; Colegio BEADFOR</strong> (69.889 mil kilos), Constructora INGEVAC.</li>
-                                                <li><strong>&bull; Colegio CALAZAN</strong> (72.876 mil kilos), Constructora CALASAD.</li>
-                                                <li><strong>&bull; Edificio MANUEL DE SALAS</strong> (90.876 mil kilos), Constructora CIPCO.</li>
-                                                <li><strong>&bull; Edificio EL QUILLAY</strong> (79.843 mil kilos), Constructora FUSH LTDA.</li>
-                                                <li><strong>&bull; Edificio COLON</strong> (889.964 mil kilos), Constructora CARLOS ESTEYMAN.</li>
-                                                <li><strong>&bull; Edificio OCODELL</strong> (890.843 mil kilos), Constructora NDS LTDA.</li>
-                                                <li><strong>&bull; Estación PLAZA PERU</strong> (840.000 mil kilos), Constructora COSAL LTDA.</li>
-                                                <li><strong>&bull; Clínica SANTA MARIA</strong> (1.552 toneladas), Constructora BESALCO LTDA.</li>
-                                                <li><strong>&bull; Edificio M.T.S</strong> (254.326 mil kilos), Constructora M.T.S.</li>
-                                            <h3 class="cubi-exp-titulo">Obras realizadas como sub contrato en enfierradura 2004 al 2013</h3>
-                                            <ul class="cubi-exp-lista">
-                                                <li><strong>&bull; Obra estanque el PERAL</strong> (43.300 mil kilos), cortado e instalado AGUAS ANDINAS como sub-contrato, Constructora COSAL. LTDA.</li>
-                                                <li><strong>&bull; Obra acueducto de aguas lluvias</strong> (68.000 mil kilos), cortado, doblado e instalado en AGUAS ANDINAS como sub contrato. Total 14 cámaras y estanques para Constructora COSAL LTDA de reciclajes para aguas lluvias en TIL-TIL constructora COSAL. LTDA.</li>
-                                                <li><strong>&bull; Obra AGUAS ANDINAS</strong> (73.000 mil kilos), cortado, doblado e instalado para AGUAS ANDINAS, como Sub-contrato para proyecto estanque de regulación y copa de agua, Constructora COSAL. LTDA.</li>
-                                                <li><strong>&bull; Edificio Fiscalía</strong> (1.930.000 mil kilos), fierro cortado, doblado e instalado para TRIBUNALES de JUSTICIA, como Sub-contrato constructora O.H.L.</li>
-                                                <li><strong>&bull; Terminal de buses SUBUS CHILE</strong> (340.000 mil kilos), fierro cortado, doblado e instalado, avenida Recoleta e Independencia como Sub-contrato.</li>
-                                                <li><strong>&bull; Trabajos realizados para AMO &amp; CIA S.A.</strong> Minería y movimientos de tierra en Construcción de fundaciones para planta de áridos.</li>
-                                                <li><strong>&bull; Edificio VILLAGRAN</strong> # 45 Altura 23 pisos. Constructora KRT (480.000 mil kilos), fierro cortado, doblado e instalado.</li>
-                                                <li><strong>&bull; Edificio IRRARAZABAL</strong> #3380 Altura 25 pisos. Constructora PAZ P2K (660.000 mil kilos), fierro cortado, doblado e instalado.</li>
-                                                <li><strong>&bull; Edificio TERRAZA BULNES</strong> #217 Altura 24 pisos. Constructora PAZ P2K (630.000 mil kilos), fierro cortado, doblado e instalado.</li>
-                                                <li><strong>&bull; Edificio JUZGADO DE SANTA CRUZ</strong> (105.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
-                                                <li><strong>&bull; Edificio JUZGADO DE CURICO</strong> (126.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
-                                                <li><strong>&bull; Planta de pasta CAROZZI BUIN</strong> (1.630.000 mil kilos) fierro instalado, Constructora INGEVEC.</li>
-                                                <li><strong>&bull; Edificio UNIVERSIDAD DE CHILE</strong> Santiago (1573 toneladas) fierro instalado, Constructora INGEVEC.</li>
-                                                <li><strong>&bull; Edificio TEATRO REGIONAL DE RANCAGUA</strong> (123.000 mil kilos), fierro cortado, doblado e instalado. Constructora INGEVEC.</li>
-                                                <li><strong>&bull; Edificio ilustré MUNICIPALIDAD DE SAN FERNANDO</strong> (124.000 mil kilos) fierro cortado doblado e instalado. Constructora COSAL. LTDA</li>
-                                                <li><strong>&bull; Edificio departamento MUJICA</strong> (350.000 mil kilos), Constructora e inmobiliaria MAGAL S.A. edificio departamentos.</li>
-                                                <li><strong>&bull; Edificio de Oncología hospital Roberto de Rio</strong> (120 mil kilos) constructora (BYC) LTDA.</li>
-                                            </ul>
-                                            <br>
-                                            <img style="width: 100%;" src="assets/img/certificados/certificado-mauricio-lara.png" alt="">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 animate">
                         <div class="cubi_card">
                             <div class="person arquitecto">
-                                <img src="./assets/img/arquitecto.jpg" alt="Arquitectura y cubicacions">
+                                <img src="./assets/img/perfil/alexis-de-la-fuente.jpeg" alt="Arquitectura y cubicacions">
                             </div>
-                            <h2 class="person-nombre">Alexis de la Fuente</h2>
-                            <p class="person-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at vel, consequatur voluptas fugiat minus adipisci officia esse quae quo, cum suscipit quod, recusandae dicta totam earum cupiditate molestiae dolorum.</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexiss">
-                                Experiencia
+                            <h2 class="person-nombre">Alexis de la Fuente Hernández</h2>
+                            <p class="person-descripcion">Especialista en arquitectura con más de 17 Años de experiencia en diseño, gestión, regularización, asesorías urbanas territoriales, paisajismo, mejoramiento del espacio público y mucho más.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexis">
+                                Ver Trayectoria
                             </button>
-                            <div class="modal fade" id="alexis" tabindex="-1" role="dialog" aria-labelledby="alexisTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="alexisTitle">Experiencia</h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos">
+        <div class="cubi_card-content auto--height"> 
+        <div class="cubi_background paper-4"></div>
+        <div class="container">
+            <h2 class="proyectos--titulo">Galeria de Obras</h2>
+            <div class="content-gallery">
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-1.png')">
+                    <img src="./assets/img/proyectos/proyecto-1.png">
+                    <div class="gallery_description">
+                        <h3>Obra. Facultad de ingeniería Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-2.png')">
+                    <img src="./assets/img/proyectos/proyecto-2.png">
+                    <div class="gallery_description">
+                        <h3>Obra. Facultad de ingeniería Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-3.png')">
+                    <img src="./assets/img/proyectos/proyecto-3.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Planta de pastas Carozzi Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-4.png')">
+                    <img src="./assets/img/proyectos/proyecto-4.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Planta de pastas Carozzi Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-5.png')">
+                    <img src="./assets/img/proyectos/proyecto-5.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Planta de pastas Carozzi Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-6.png')">
+                    <img src="./assets/img/proyectos/proyecto-6.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Planta de pastas Carozzi Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-7.png')">
+                    <img src="./assets/img/proyectos/proyecto-7.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Juzgado de la familia de santa CRUZ Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-8.png')">
+                    <img src="./assets/img/proyectos/proyecto-8.png">
+                    <div class="gallery_description">
+                        <h3>Juzgado de la familia de santa CRUZ Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-9.png')">
+                    <img src="./assets/img/proyectos/proyecto-9.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Ilustre Municipalidad de San Fernando Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-10.png')">
+                    <img src="./assets/img/proyectos/proyecto-10.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Ilustre Municipalidad de San Fernando Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-11.png')">
+                    <img src="./assets/img/proyectos/proyecto-11.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Juzgado de Curicó Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-12.png')">
+                    <img src="./assets/img/proyectos/proyecto-12.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Ilustre Municipalidad de San Fernando Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-13.png')">
+                    <img src="./assets/img/proyectos/proyecto-13.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Ilustre Municipalidad de San Fernando Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-14.png')">
+                    <img src="./assets/img/proyectos/proyecto-14.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Juzgado de Curicó Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-15.png')">
+                    <img src="./assets/img/proyectos/proyecto-15.png">
+                    <div class="gallery_description">
+                        <h3>Edificio inmobiliaria KRT</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-16.png')">
+                    <img src="./assets/img/proyectos/proyecto-16.png">
+                    <div class="gallery_description">
+                        <h3>Edificio inmobiliaria KRT</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-17.png')">
+                    <img src="./assets/img/proyectos/proyecto-17.png">
+                    <div class="gallery_description">
+                        <h3>2° Etapa Obra Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-18.png')">
+                    <img src="./assets/img/proyectos/proyecto-18.png">
+                    <div class="gallery_description">
+                        <h3>Etapa Obra Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-19.png')">
+                    <img src="./assets/img/proyectos/proyecto-19.png">
+                    <div class="gallery_description">
+                        <h3>2° Etapa Obra Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-20.png')">
+                    <img src="./assets/img/proyectos/proyecto-20.png">
+                    <div class="gallery_description">
+                        <h3>2° Etapa Obra Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-21.png')">
+                    <img src="./assets/img/proyectos/proyecto-21.png">
+                    <div class="gallery_description">
+                        <h3>2° Etapa Obra Universidad de Chile Empresa ingevec</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-22.png')">
+                    <img src="./assets/img/proyectos/proyecto-22.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Copa de Aguas ANDINA. Comuna de Batuco Fundación Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-23.png')">
+                    <img src="./assets/img/proyectos/proyecto-23.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Copa de Aguas ANDINA. Comuna de Batuco Fundación Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-24.png')">
+                    <img src="./assets/img/proyectos/proyecto-24.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Copa de Aguas ANDINA. Comuna de Batuco Fundación Empresa COSAL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-25.png')">
+                    <img src="./assets/img/proyectos/proyecto-25.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Talleres línea 6 Metro Empresa OHL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-26.png')">
+                    <img src="./assets/img/proyectos/proyecto-26.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Talleres línea 6 Metro Empresa OHL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-27.png')">
+                    <img src="./assets/img/proyectos/proyecto-27.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Talleres línea 6 Metro Empresa OHL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-28.png')">
+                    <img src="./assets/img/proyectos/proyecto-28.png">
+                    <div class="gallery_description">
+                        <h3>Obra: Talleres línea 6 Metro Empresa OHL</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-29.png')">
+                    <img src="./assets/img/proyectos/proyecto-29.png">
+                    <div class="gallery_description">
+                        <h3>Obra mall los Dominicos Empresa SIGRO</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-30.png')">
+                    <img src="./assets/img/proyectos/proyecto-30.png">
+                    <div class="gallery_description">
+                        <h3>Obra mall los Dominicos Empresa SIGRO</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-31.png')">
+                    <img src="./assets/img/proyectos/proyecto-31.png">
+                    <div class="gallery_description">
+                        <h3>Armaduras de pilotes Obra Edificio consistorial de COQUIMBO</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-32.png')">
+                    <img src="./assets/img/proyectos/proyecto-32.png">
+                    <div class="gallery_description">
+                        <h3>Armaduras de pilotes Obra Edificio consistorial de COQUIMBO</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-33.png')">
+                    <img src="./assets/img/proyectos/proyecto-33.png">
+                    <div class="gallery_description">
+                        <h3>Armaduras de pilotes Obra Edificio consistorial de COQUIMBO</h3>
+                    </div>
+                </div>
+                <div class="gallery-image" style="background-image: url('./assets/img/proyectos/proyecto-34.png')">
+                    <img src="./assets/img/proyectos/proyecto-34.png">
+                    <div class="gallery_description">
+                        <h3>Armaduras de pilotes Obra Edificio consistorial de COQUIMBO</h3>
                     </div>
                 </div>
             </div>
@@ -157,12 +297,14 @@
         <div class="cubi-clientes">
             <div class="cubi_background paper-3"></div>
             <div class="container">
-                <h2 class="clientes--titulo">Empresas en la que hemos trabajado</h2>
+                <h2 class="clientes--titulo">Empresas con las que hemos trabajado</h2>
                 <div class="carousel-clientes">
-                    <div>Metro de Santiago</div>
-                    <div>Constructora COSAL</div>
-                    <div>Paz Froimovich</div>
-                    <div>Metro de Santiago</div>
+                    <div><img src="./assets/img/empresas/ingevec.jpg" alt="Constructora ingevec"></div>
+                    <div><img src="./assets/img/empresas/cosal.jpg" alt="Constructora cosal"></div>
+                    <div><img src="./assets/img/empresas/ohl.jpg" alt="Constructora ohl"></div>
+                    <div><img src="./assets/img/empresas/paz.png" alt="Constructora paz"></div>
+                    <div><img src="./assets/img/empresas/magal.jpg" alt="Constructora magal"></div>
+                    <div><img src="./assets/img/empresas/besalco.jpeg" alt="Constructora besalco"></div>
                 </div>
             </div>
         </div>
@@ -172,8 +314,8 @@
             <div class="cubi_background paper-2">
             <form action="./envia.php" method="post">
                 <div class="cubi_contact animate">
-                    <h2 class="cubi_contact-title">¿Necesita ayuda? Cotice o asesosrece con nosotros...</h2>
                     <div class="container">
+                            <h2 class="cubi_contact-title">¿Necesita ayuda? Cotice o asesorece con nosotros...</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -226,6 +368,172 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="copy">CUBIARQ - Copyright © 2020  | Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="equipo-vcs">
+        <div class="mauricio-lara">
+            <div class="modal fade cubi--modal" id="mauricio" tabindex="-1" role="dialog" aria-labelledby="mauricioTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="mauricioTitle">Trayectoria Laboral</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="cubi-exp-titulo" style="display: none;">Introducción</h3>
+                            <p class="cubi-exp-intro">Especialista en obra gruesa, con más de 25 años de experiencia he logrado liderar proyectos de gran envergadura a lo largo de mi carrera, obteniendo una basta experiencia en terreno y satisfacción por obra terminado.</p>
+                            <h3 class="cubi-exp-titulo">Proyectos Liderados</h3>
+                            <ul class="cubi-exp-lista">
+                                <li><strong>&bull; Año 1995</strong> supervisor de enfierradura, edificio Alsacia 100. Altura 22 pisos, aproximadamente (590.000 mil kilos). Constructora San José Miguel Jorquera.</li>
+                                <li><strong>&bull; Año 1996</strong> Sub-Contrato Media luna de Rancagua, total (155.000 mil kilos) Constructora LIRA Y CORP.</li>
+                                <li><strong>&bull; Año 1996 - 1997</strong> Supervisor de enfierradura, condominio ROCAS SANTO DOMINGO total (120.000 mil kilos), constructora EBCO LTDA.</li>
+                                <li><strong>&bull; Año 1997</strong> Sub Contrato en obra CLUB HOUSE, total (124.000 mil kilos), Constructora IDROSAN LTDA.</li>
+                                <li><strong>&bull; Año 1998</strong> Supervisor de enfierradura edificio PLAZA REAL, ciudad de Copiapó. Total (740.000 mil kilos), Constructora BESALCO LTDA.</li>
+                                <li><strong>&bull; Año 1999</strong> Supervisor de enfierradura obra CLINICA SANTA MARIA, total (1.552.000 mil kilos), Constructora COSAL LTDA.</li>
+                                <li><strong>&bull; Año 2000</strong> Supervisor de enfierradura obra estación PLAZA PERU, total (840.000 mil kilos), Constructora FUCH LTDA.</li>
+                                <li><strong>&bull; Año 2001</strong> Supervisor en enfierradura CIUDAD EMPRESARIAL 3 edificios, total (1.840.000 mil kilos).</li>
+                            </ul>
+                            <h3 class="cubi-exp-titulo">Obras Cubicadas</h3>
+                            <ul class="cubi-exp-lista">
+                                <li><strong>&bull; Cuidad empresarial</strong> (1.843 toneladas), Constructora FUCH LTDA.</li>
+                                <li><strong>&bull; Mutual de seguridad ACHS</strong> (70.263 mil kilos), Constructora ISA LTDA.</li>
+                                <li><strong>&bull; Colegio BEADFOR</strong> (69.889 mil kilos), Constructora INGEVAC.</li>
+                                <li><strong>&bull; Colegio CALAZAN</strong> (72.876 mil kilos), Constructora CALASAD.</li>
+                                <li><strong>&bull; Edificio MANUEL DE SALAS</strong> (90.876 mil kilos), Constructora CIPCO.</li>
+                                <li><strong>&bull; Edificio EL QUILLAY</strong> (79.843 mil kilos), Constructora FUSH LTDA.</li>
+                                <li><strong>&bull; Edificio COLON</strong> (889.964 mil kilos), Constructora CARLOS ESTEYMAN.</li>
+                                <li><strong>&bull; Edificio OCODELL</strong> (890.843 mil kilos), Constructora NDS LTDA.</li>
+                                <li><strong>&bull; Estación PLAZA PERU</strong> (840.000 mil kilos), Constructora COSAL LTDA.</li>
+                                <li><strong>&bull; Clínica SANTA MARIA</strong> (1.552 toneladas), Constructora BESALCO LTDA.</li>
+                                <li><strong>&bull; Edificio M.T.S</strong> (254.326 mil kilos), Constructora M.T.S.</li>
+                            </ul>
+                            <h3 class="cubi-exp-titulo">Obras realizadas como sub contrato en enfierradura 2004 al 2013</h3>
+                            <ul class="cubi-exp-lista">
+                                <li><strong>&bull; Obra estanque el PERAL</strong> (43.300 mil kilos), cortado e instalado AGUAS ANDINAS como sub-contrato, Constructora COSAL. LTDA.</li>
+                                <li><strong>&bull; Obra acueducto de aguas lluvias</strong> (68.000 mil kilos), cortado, doblado e instalado en AGUAS ANDINAS como sub contrato. Total 14 cámaras y estanques para Constructora COSAL LTDA de reciclajes para aguas lluvias en TIL-TIL constructora COSAL. LTDA.</li>
+                                <li><strong>&bull; Obra AGUAS ANDINAS</strong> (73.000 mil kilos), cortado, doblado e instalado para AGUAS ANDINAS, como Sub-contrato para proyecto estanque de regulación y copa de agua, Constructora COSAL. LTDA.</li>
+                                <li><strong>&bull; Edificio Fiscalía</strong> (1.930.000 mil kilos), fierro cortado, doblado e instalado para TRIBUNALES de JUSTICIA, como Sub-contrato constructora O.H.L.</li>
+                                <li><strong>&bull; Terminal de buses SUBUS CHILE</strong> (340.000 mil kilos), fierro cortado, doblado e instalado, avenida Recoleta e Independencia como Sub-contrato.</li>
+                                <li><strong>&bull; Trabajos realizados para AMO &amp; CIA S.A.</strong> Minería y movimientos de tierra en Construcción de fundaciones para planta de áridos.</li>
+                                <li><strong>&bull; Edificio VILLAGRAN</strong> # 45 Altura 23 pisos. Constructora KRT (480.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                <li><strong>&bull; Edificio IRRARAZABAL</strong> #3380 Altura 25 pisos. Constructora PAZ P2K (660.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                <li><strong>&bull; Edificio TERRAZA BULNES</strong> #217 Altura 24 pisos. Constructora PAZ P2K (630.000 mil kilos), fierro cortado, doblado e instalado.</li>
+                                <li><strong>&bull; Edificio JUZGADO DE SANTA CRUZ</strong> (105.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
+                                <li><strong>&bull; Edificio JUZGADO DE CURICO</strong> (126.000 mil kilos), fierro cortado, doblado e instalado. Constructora COSAL. LTDA.</li>
+                                <li><strong>&bull; Planta de pasta CAROZZI BUIN</strong> (1.630.000 mil kilos) fierro instalado, Constructora INGEVEC.</li>
+                                <li><strong>&bull; Edificio UNIVERSIDAD DE CHILE</strong> Santiago (1573 toneladas) fierro instalado, Constructora INGEVEC.</li>
+                                <li><strong>&bull; Edificio TEATRO REGIONAL DE RANCAGUA</strong> (123.000 mil kilos), fierro cortado, doblado e instalado. Constructora INGEVEC.</li>
+                                <li><strong>&bull; Edificio ilustré MUNICIPALIDAD DE SAN FERNANDO</strong> (124.000 mil kilos) fierro cortado doblado e instalado. Constructora COSAL. LTDA</li>
+                                <li><strong>&bull; Edificio departamento MUJICA</strong> (350.000 mil kilos), Constructora e inmobiliaria MAGAL S.A. edificio departamentos.</li>
+                                <li><strong>&bull; Edificio de Oncología hospital Roberto de Rio</strong> (120 mil kilos) constructora (BYC) LTDA.</li>
+                            </ul>
+                            <br>
+                            <img style="width: 100%;" src="assets/img/certificados/certificado-mauricio-lara.png" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alexis-de-la-fuente">
+            <div class="modal fade cubi--modal" id="alexis" tabindex="-1" role="dialog" aria-labelledby="alexisTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="alexisTitle">Trayectoria Laboral</h5>
+                        </div>
+                        <div class="modal-body">
+                                <h3 class="cubi-exp-titulo" style="display: none;">Introducción</h3>
+                                <p class="cubi-exp-intro">Experiencia profesional basada en la arquitectura, diseño, gestión, regularización, asesorías urbanas territoriales, paisajismo, mejoramiento del espacio público y urbano y construcción de Boulevard, edificios públicos, aeropuertos, edificios de salud, viviendas, educacionales, oficinas y mall, cuyo ámbito, abarca las siguientes áreas:</p>
+                                <h3 class="cubi-exp-titulo">Talentos:</h3>
+                                <ul class="cubi-exp-lista">
+                                    <li style="padding-bottom: 15px;"><strong>&bull; Arquitectura:</strong> 
+                                        <ul class="cubi-exp-lista" style="padding-left: 7px;">
+                                            <li>&bull; Diseño de proyectos, coordinación, gestión, regularización, supervisión de obras civiles y edificación. Realización de inspección técnica de obras. Evaluación de proyectos y estudios de factibilidad y cabidas</li>
+                                            <li>&bull; Elaboración de especificaciones técnicas de proyectos, cubicaciones, preparación de bases de licitaciones para la construcción y adjudicación, diagnósticos urbanos territoriales.</li>
+                                            <li>&bull; Desarrollo urbano, paisajismo, diseño de mobiliario y arquitectura interior.</li>
+                                        </ul>
+                                    </li>
+                                    <li style="padding-bottom: 15px;"><strong>&bull; Construcción</strong>
+                                        <ul class="cubi-exp-lista" style="padding-left: 7px;">
+                                            <li>&bull; Administrador de obra, jefe de terreno, coordinación de especialidades, control de calidad e inspección técnica, en obras civiles de arquitectura y Estructuras Metálicas pesadas. Experiencia de construcción de hormigón en obra gruesa y terminaciones. Ejecución de instalaciones sanitaria, redes contra incendio, climatización, ascensores, etc.</li>
+                                            <li>&bull; Programación, ejecución y control de costo (material y MO).</li>
+                                            <li>&bull; Supervisión de avance, cronograma de obra, elaboración de adicionales.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <h3 class="cubi-exp-titulo">Proyectos Liderados</h3>
+                                <ul class="cubi-exp-lista">
+                                    <li><strong>&bull; Oct 2019 – Dic.2020</strong> Asesorías Urbanas Territoriales, oficina de Arquitectura Marcos Rodríguez O. SPA. Proyecto LEY <strong>21.040.</strong></li>
+                                    <li><strong>&bull; Enero- Sept 2018</strong> Constructora Cosal S. A., como Oficina de Estudio de Proyecto, en proyecto “CESFAM Limache Viejo. Comuna de Limache. Mandante Servicio de Salud de Viña del Mar.</li>
+                                    <li><strong>&bull; 2017 – 2016 Profesional Jefe de Terreno y Administrador Suplente</strong> (Coordinación, Ejecución del proyectos civiles y paisajismo) de la Empresa Constructora Cosal S.A, en proyecto Mid Mall Maipú, etapa 2 (28.549,52 m2 construidos, 8213 m2 paisajismo). Costo del proyecto: $10.050.305.132 (diciembre 2016 a julio 2017).</li>
+                                    <li><strong>&bull; 2015 – 2014 Profesional Residente</strong> (Administración, Coordinación y Ejecución del proyecto) de la Empresa Constructora Cosal S.A, en proyecto Reposición 3ra Comisaria de Carabineros Bulnes (1.399,85m2 construidos). Costo del proyecto: $1.995.128.079. Fondos del Ministerio Obras Publicas (septiembre 2014 a octubre 2015).</li>
+                                    <li><strong>&bull; 2014 Profesional Coordinador y Encargado de Gestión</strong> (Administración, Coordinación y Ejecución del proyecto) de Empresa Constructora Cosal S.A, en el proyecto Vivienda Tipo, con Fondo Solidario y subsidio habitacional rural para la reconstrucción de Valparaíso, mandante Ministerio de Vivienda y Urbanismo de Chile (Agosto 2014 a Sept 2014).</li>
+                                    <li><strong>&bull; 2014 - 2013 Profesional Jefe de Terreno</strong> (Coordinación y Logística de Ejecución de Obra) de Empresa Constructora Cosal S.A, en el proyecto Ampliación y Mejoramiento Aeropuerto Cerro Moreno Antofagasta (10.351 m2 construidos). Costo de proyecto 507.390 UF, mandante Ministerio de Obras Públicas (mayo 2013 a agosto 2014). Alguna de las obras ejecutadas: Refuerzo estructural con tensor estructural, Subestación Eléctrica y Postación. Instalación de Puente Embarque, Edificio Casino de la DGAC, Edificio SAR- FACH Aeropuerto Cerro Moreno Profesional Residente Edificio SEI Aeropuerto Cerro Moreno, Caminos de Acceso y Vialidad Interior, Cámaras de rieles para descarga de Aeronaves, Instalación Puente de Embarque. Sistema de seguridad, Sala de Datos, Subestación Eléctrica, Planta de Agua potable y incendio, Planta de tratamiento de agua servidas, luminaria en losa, Ascensores, escalera automáticas, puertas automáticas, sistema de correderas transportadoras, maquina rayos X, entre otras. Obras exteriores: caminos de Acceso y Vialidad Interior. Ampliación e implementación de estacionamiento. Paisajismo y riego automático. Cerco perimetral y de seguridad.</li>
+                                    <li><strong>&bull; 2013 – 2012 Profesional Residente</strong> (Administración, Coordinación y Ejecución del Proyecto) de Empresa Constructora Cosal S.A, en el proyecto Edificio Municipal de Placilla, Comuna Placilla (1.500 m2 construidos). Costo del proyecto 44.500 UF, mandante Gobierno Regional del Libertador Bernardo O ́Higgins (mayo 2012 a abril 2013).</li>
+                                    <li><strong>&bull; 2012 Profesional de Obra y Arquitecto Coordinador Urbano y Paisajismo</strong> (Ejecución del Proyecto) de la Empresa Constructora Cosal S. A., en el proyecto Mejoramiento del espacio público y urbano de Dichato, proyecto de nombre Boulevard Daniel Vera, Comuna de Dichato, mandante Serviu Bío-Bío (febrero 2012 – abril 2012).</li>
+                                    <li><strong>&bull; 2010 Profesional Jefe de Terreno</strong> (Administración, Coordinación
+                                        y Ejecución del Proyecto) de la Empresa Constructora Cosal
+                                        S. A., en el proyecto Reparación Juzgado de San Antonio,
+                                        mandante Poder Judicial (julio 2010-septiembre 2010).</li>
+                                    <li><strong>&bull; 2010 Profesional Jefe de Terreno</strong> (Coordinación y Ejecución del
+                                        Proyecto) de la Empresa Constructora Cosal S. A., en el
+                                        proyecto Reparación Corte de Apelaciones de Concepción,
+                                        mandante Poder Judicial (abril 2010-junio 2010).</li>
+                                    <li><strong>&bull; 2010 - 2009 Profesional Residente</strong> (Administración, Coordinación y
+                                        Ejecución del Proyecto) de la Empresa Constructora Cosal
+                                        S. A., en el Proyecto Juzgado de Letras y Familia Santa Cruz,
+                                        mandante Poder Judicial (abril 2009-marzo 2010).</li>
+                                    <li><strong>&bull; 2009 – 2008 Profesional Jefe de Terreno</strong> (Coordinación y Ejecución del
+                                        Proyecto) de la Empresa Constructora Cosal S. A., en el
+                                        Proyecto Corte de Apelaciones y Tribunales Iquique,
+                                        mandante Poder Judicial (febrero 2008-marzo 2009).</li>
+                                    <li><strong>&bull; 2008 - 2007 Profesional Residente</strong> (Administración, Coordinación y
+                                        Ejecución del Proyecto) de la Empresa Constructora Cosal
+                                        S. A., en el Proyecto Juzgado de Garantía y Familia de
+                                        Peñaflor, mandante Poder Judicial (mayo 2007-enero
+                                        2008).</li>
+                                    <li><strong>&bull; 2007 - 2006 Encargado de Obra y Calidad</strong> de la Empresa Constructora
+                                        Cosal S. A., en el proyecto Juzgado de Garantía y Familia de
+                                        Limache, mandante Poder Judicial (enero 2006-abril 2007).</li>
+                                    <li><strong>&bull; 2005 Inspector Técnico</strong> de la Empresa Constructora Cosal S.A.,
+                                        en el Proyecto Juzgado de la Familia de Colina, mandante
+                                        Poder Judicial (abril 2005-diciembre 2005).</li>
+                                    <li><strong>&bull; 2005 – 2004 Arquitecto Jefe de Estudio de Proyectos</strong> de la Empresa
+                                        Constructora Cosal S. A.-IDC Central de Alimentos, en el
+                                        Proyecto Estadio Techado del Parque O ́Higgins, mandante
+                                        Ministerio de Obras Públicas, Coordinación General de
+                                        Concesiones (julio 2004-marzo 2005).</li>
+                                    <li><strong>&bull; 2004 Encargado del Estudio de Proyecto</strong> de la Planta de
+                                        Tratamiento Yumbel, por parte de la Empresa Constructora
+                                        Cosal S. A. y Eathisa (mayo 2004-junio 2004).</li>
+                                    <li><strong>&bull; 2004 Encargado del Estudio de Proyecto</strong> de la Planta de
+                                        Tratamiento Bulnes, por parte de la Empresa Constructora
+                                        Cosal S. A. y Eathisa (mayo 2004).</li>
+                                    <li><strong>&bull; 2004 Encargado del Estudio de Proyecto</strong> de la Planta de
+                                        Tratamiento Coihueco, por parte de la Empresa
+                                        Constructora Cosal S. A. y Eathisa (abril 2004).</li>
+                                    <li><strong>&bull; 2003 Encargado del Estudio de Proyecto</strong> de Ciclo vías para las
+                                        comunas de Providencia y Santiago, por parte de la
+                                        Empresa Constructora Cosal S. A., enmarcado en el
+                                        Proyecto Transporte Sustentable y Calidad del Aire para
+                                        Santiago, financiado por el Banco Internacional para la
+                                        Reconstrucción y Fomento BIRF (abril 2003).</li>
+                                    <li><strong>&bull; 2003</strong> Diseño, Construcción y legalización de vivienda unifamiliar,
+                                        sistema ladrillo fiscal, estilo chileno, 138 m2, Pirque (2003).</li>
+                                </ul>
+                                
+                                <br>
+                                <img style="width: 100%;" src="assets/img/certificados/certificado-alexis-de-la-fuente.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
                     </div>
                 </div>
             </div>

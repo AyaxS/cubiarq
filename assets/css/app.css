@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 .cubi--logo {
@@ -90,7 +90,7 @@ html {
 }
 
 .cubi_content-menu .cubi-menu li img {
-  width: 100%;
+  width: 200px;
 }
 
 .cubi_content-menu .cubi-menu li a {
@@ -99,6 +99,7 @@ html {
   -webkit-transition: ease 0.5s;
   -o-transition: ease 0.5s;
   transition: ease 0.5s;
+  letter-spacing: 1px;
 }
 
 .cubi_content-menu .cubi-menu li a:hover {
@@ -148,7 +149,7 @@ html {
 }
 
 .cubi_card-content .cubi_card .person.arquitecto {
-  background: url("../img/arquitecto.jpg") no-repeat #000;
+  background: url("../img/perfil/alexis-de-la-fuente.jpeg") no-repeat #000;
   background-position: center center;
   background-size: cover;
 }
@@ -166,6 +167,7 @@ html {
   font-size: 16px;
   text-shadow: 1px 3px 4px black;
   padding: 0px 0px 20px 0px;
+  font-weight: 100;
 }
 
 .cubi_card-content .cubi_card button {
@@ -198,7 +200,7 @@ html {
   color: #fff;
   font-weight: 300;
   text-shadow: 1px 3px 4px black;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0px 20px 0px;
   font-size: 22px;
   text-align: center;
 }
@@ -209,6 +211,20 @@ html {
 
 .cubi-clientes .carousel-clientes > div {
   text-align: center;
+}
+
+.cubi-clientes .carousel-clientes .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cubi-clientes .carousel-clientes .slick-slide img {
+  max-width: 120px;
+  max-height: 60px;
 }
 
 .cubi-clientes .carousel-clientes .slick-prev {
@@ -257,6 +273,11 @@ html {
 
 .cubi_background.paper-3 {
   background: url("../img/santiago-chile.jpg") no-repeat #000;
+  z-index: -1;
+}
+
+.cubi_background.paper-4 {
+  background: url("../img/proyectos-fondo.jpg") no-repeat #000;
   z-index: -1;
 }
 
@@ -375,12 +396,35 @@ html {
   visibility: visible;
 }
 
-.modal-backdrop.show {
-  z-index: -1;
-}
-
 .cubi--modal {
   text-align: left;
+}
+
+.cubi--modal .modal-header {
+  border: 0px;
+}
+
+.cubi--modal .modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cubi--modal .modal-content h1,
+.cubi--modal .modal-content h2,
+.cubi--modal .modal-content h3,
+.cubi--modal .modal-content h4,
+.cubi--modal .modal-content h5,
+.cubi--modal .modal-content p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cubi--modal .modal-body {
+  padding: 0px 15px;
+}
+
+.cubi--modal .modal-body h3 {
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+  font-weight: 900px;
 }
 
 .cubi--modal .modal-title {
@@ -402,4 +446,87 @@ html {
 .cubi--modal .cubi-exp-lista li {
   font-size: 12px;
   list-style: none;
+  font-weight: 300;
+}
+
+.cubi--modal .btn-secondary {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+}
+
+.proyectos--titulo {
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 1px 3px 4px black;
+  padding: 40px 0px 20px 0px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.fotorama {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fotorama__nav__shaft .fotorama__nav__frame--dot .fotorama__dot {
+  border: solid 1px #fff;
+}
+
+.fotorama__nav__shaft .fotorama__nav__frame--dot .fotorama__active .fotorama__dot {
+  background-color: #fff;
+}
+
+.content-gallery {
+  position: relative;
+}
+
+.content-gallery .gallery-image {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.content-gallery .gallery-image img {
+  visibility: hidden;
+}
+
+.content-gallery .slick-prev {
+  position: absolute;
+  top: 45%;
+  left: -50px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.content-gallery .slick-next {
+  position: absolute;
+  top: 45%;
+  right: -50px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.content-gallery .gallery_description {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.content-gallery .gallery_description h3 {
+  font-size: 16px;
+  line-height: 40px;
 }
