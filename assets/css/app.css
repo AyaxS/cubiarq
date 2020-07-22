@@ -57,6 +57,7 @@ html {
 
 .auto--height {
   border-bottom: solid 2px #000;
+  min-height: 750px;
 }
 
 .cubi_content-menu {
@@ -67,6 +68,18 @@ html {
   border-bottom: solid 1px #000;
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 1;
+}
+
+@media (min-width: 20em) {
+  .cubi_content-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 46.25em) {
+  .cubi_content-menu {
+    display: block;
+  }
 }
 
 .cubi_content-menu .cubi-menu {
@@ -86,7 +99,7 @@ html {
 
 .cubi_content-menu .cubi-menu li {
   list-style: none;
-  padding: 0px 35px;
+  padding: 0px 25px;
 }
 
 .cubi_content-menu .cubi-menu li img {
@@ -109,7 +122,22 @@ html {
 .cubi_card-content {
   position: relative;
   display: block;
-  padding: 100px 0px;
+  padding: 30px 0px;
+  border-bottom: solid 0px #000;
+}
+
+@media (min-width: 46.25em) {
+  .cubi_card-content {
+    height: auto;
+    padding: 60px 0px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .cubi_card-content {
+    height: auto;
+    padding: 100px 0px;
+  }
 }
 
 .cubi_card-content .cubi_card {
@@ -128,6 +156,13 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
+}
+
+@media (min-width: 20em) {
+  .cubi_card-content .cubi_card {
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .cubi_card-content .cubi_card .person {
@@ -186,6 +221,195 @@ html {
   background-color: #fff !important;
   color: #000 !important;
   border: 0px !important;
+}
+
+.cubi_content-forma {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.cubi_content-forma .forma-title {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+
+.cubi_content-forma .forma-title .title {
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 1px 3px 4px black;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cubi_content-forma .forma-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin: 15px 0px;
+  border: solid 2px #000;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.cubi_content-forma .forma-card.big {
+  width: 100%;
+}
+
+.cubi_content-forma .forma-card.big-b {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 0px;
+}
+
+.cubi_content-forma .forma-card.big-b span {
+  width: 100%;
+  height: 20px;
+  display: block;
+  overflow: hidden;
+}
+
+.cubi_content-forma .forma-card.big-c {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.cubi_content-forma .forma-card.big-c span {
+  font-size: 12px;
+}
+
+.cubi_content-forma .forma-card.big-c span a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #DFB805;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.cubi_content-forma .forma-card p {
+  font-size: 14px;
+}
+
+.cubi_content-forma .forma-card .ribbon {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: #DFB805;
+  -webkit-box-shadow: 10px 10px 10px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px -13px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.cubi_content-forma .forma-card .ribbon span {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.cubi_content-forma .forma-card .ribbon.bottom {
+  bottom: -10px;
+  top: auto;
+  width: 180px;
+}
+
+.cubi_content-forma .forma-card .planos-carousel {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cubi_content-forma .forma-card .planos-carousel img {
+  width: 100%;
+}
+
+.cubi_content-forma .forma-card .slick-prev {
+  position: absolute;
+  top: 42%;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: solid 2px #000;
+  z-index: 1;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cubi_content-forma .forma-card .slick-prev img {
+  width: 30%;
+}
+
+.cubi_content-forma .forma-card .slick-next {
+  position: absolute;
+  top: 42%;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: solid 2px #000;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cubi_content-forma .forma-card .slick-next img {
+  width: 30%;
 }
 
 .cubi-clientes {

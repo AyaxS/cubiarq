@@ -108,4 +108,58 @@ $( document ).ready(function() {
 		  }
 		]
 	});
+
+	$('.planos-carousel').slick({
+		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        prevArrow: '<span class="slick-prev"><img src="./assets/img/arrow-left.png" alt=""></span>',
+      	nextArrow: '<span class="slick-next"><img src="./assets/img/arrow-right.png" alt=""></span>',
+		dots: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+	});
+
+	var isMobile = {
+		Android: function() {
+		  return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+		  return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+		  return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		iPhone: function() {
+			  return navigator.userAgent.match(/iPhone/i);
+		  },
+		iPad: function() {
+			  return navigator.userAgent.match(/iPad/i);
+		  },
+		Opera: function() {
+		  return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+		  return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+		  return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+	  
+	//test
+	if ( isMobile.any() ) {
+		$("#canvas").hide();
+		$('.cubi_card-content').css('height', 'auto');
+	}
+	
+	if ( isMobile.iPhone() ) {
+		$("#canvas").hide();
+		$('.cubi_card-content').css('height', 'auto');
+	}
+	
+	if ( isMobile.Android() ) {
+		$("#canvas").hide();
+		$('.cubi_card-content').css('height', 'auto');
+	}
 });
