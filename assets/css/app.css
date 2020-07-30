@@ -55,9 +55,31 @@ html {
   text-align: center;
 }
 
+@media (max-width: 61.24em) {
+  .cub_home-content .home-content {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.card-desktop {
+  display: none;
+}
+
+@media (min-width: 61.25em) {
+  .card-desktop {
+    display: block;
+  }
+}
+
 .auto--height {
   border-bottom: solid 2px #000;
-  min-height: 750px;
+  min-height: auto;
+}
+
+@media (min-width: 20em) {
+  .auto--height {
+    min-height: 750px;
+  }
 }
 
 .cubi_content-menu {
@@ -68,18 +90,9 @@ html {
   border-bottom: solid 1px #000;
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 1;
-}
-
-@media (min-width: 20em) {
-  .cubi_content-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 46.25em) {
-  .cubi_content-menu {
-    display: block;
-  }
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .cubi_content-menu .cubi-menu {
@@ -99,11 +112,26 @@ html {
 
 .cubi_content-menu .cubi-menu li {
   list-style: none;
-  padding: 0px 25px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 61.25em) {
+  .cubi_content-menu .cubi-menu li {
+    padding: 0px 25px;
+    font-size: 14px;
+  }
 }
 
 .cubi_content-menu .cubi-menu li img {
-  width: 200px;
+  width: 150px;
+}
+
+@media (min-width: 81.25em) {
+  .cubi_content-menu .cubi-menu li img {
+    width: 200px;
+  }
 }
 
 .cubi_content-menu .cubi-menu li a {
@@ -236,7 +264,13 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 61.25em) {
+  .cubi_content-forma {
+    padding-bottom: 100px;
+  }
 }
 
 .cubi_content-forma .forma-title {
@@ -255,7 +289,7 @@ html {
 
 .cubi_content-forma .forma-card {
   position: relative;
-  width: 250px;
+  width: 100%;
   height: 250px;
   background-color: rgba(255, 255, 255, 0.65);
   margin: 15px 0px;
@@ -271,6 +305,12 @@ html {
   -ms-flex-align: center;
   align-items: center;
   padding: 15px;
+}
+
+@media (min-width: 81.25em) {
+  .cubi_content-forma .forma-card {
+    width: 250px;
+  }
 }
 
 .cubi_content-forma .forma-card.big {
@@ -308,8 +348,25 @@ html {
   text-shadow: 1px 1px 1px black;
 }
 
+.cubi_content-forma .forma-card h4 {
+  font-size: 16px;
+}
+
+@media (min-width: 81.25em) {
+  .cubi_content-forma .forma-card h4 {
+    font-size: 1.5rem;
+  }
+}
+
 .cubi_content-forma .forma-card p {
-  font-size: 14px;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 81.25em) {
+  .cubi_content-forma .forma-card p {
+    font-size: 14px;
+  }
 }
 
 .cubi_content-forma .forma-card .ribbon {
@@ -529,6 +586,13 @@ html {
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
+  padding: 340px 0px;
+}
+
+@media (min-width: 46.25em) {
+  .cubi_contact-content {
+    padding: 0px 0px;
+  }
 }
 
 .cubi_contact-content .cubi_contact {
@@ -709,7 +773,7 @@ html {
   position: relative;
   text-align: center;
   width: 400px;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   background-color: #000;
   margin-left: 10px;
@@ -720,6 +784,12 @@ html {
   outline: none;
 }
 
+@media (min-width: 61.25em) {
+  .content-gallery .gallery-image {
+    height: 400px;
+  }
+}
+
 .content-gallery .gallery-image img {
   visibility: hidden;
 }
@@ -727,17 +797,41 @@ html {
 .content-gallery .slick-prev {
   position: absolute;
   top: 45%;
-  left: -50px;
+  left: 0px;
   z-index: 2;
   cursor: pointer;
+}
+
+@media (min-width: 46.25em) {
+  .content-gallery .slick-prev {
+    left: -20px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .content-gallery .slick-prev {
+    left: -50px;
+  }
 }
 
 .content-gallery .slick-next {
   position: absolute;
   top: 45%;
-  right: -50px;
+  right: 0px;
   z-index: 2;
   cursor: pointer;
+}
+
+@media (min-width: 46.25em) {
+  .content-gallery .slick-next {
+    right: -20px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .content-gallery .slick-next {
+    right: -50px;
+  }
 }
 
 .content-gallery .gallery_description {
@@ -753,4 +847,20 @@ html {
 .content-gallery .gallery_description h3 {
   font-size: 16px;
   line-height: 40px;
+}
+
+.headroom--not-top {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+}
+
+.headroom--unpinned {
+  top: -85px;
+}
+
+.headroom--pinned {
+  top: 0px;
 }

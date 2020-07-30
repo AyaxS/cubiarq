@@ -1,3 +1,14 @@
+<!--<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'php/Exception.php';
+require 'php/PHPMailer.php';
+require 'php/SMTP.php';
+
+?>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +30,13 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="./assets/js/headroom.js"></script>
     <title>Cubiarq</title>
 </head>
 <body>
     <section id="inicio">
         <div class="cub_home-content auto--height" id="particles-js">
-            <div class="cubi_content-menu">
+            <div id="header" class="cubi_content-menu">
                 <div class="container">
                     <ul class="cubi-menu">
                         <li><a href="index.html"><img class="cubi--logo" src="./assets/img/logo/cubi-arq-7.png" alt=""></a></li>
@@ -148,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 card-desktop">
                         <div class="forma-card big-b">
                             <span>&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;</span>
                         </div>
@@ -401,7 +413,7 @@
     <section id="contacto">
         <div class="cubi_contact-content auto--height">
             <div class="cubi_background paper-2">
-            <form action="./envia.php" method="post">
+            <form action="envia.php" method="post">
                 <div class="cubi_contact animate">
                     <div class="container">
                             <h2 class="cubi_contact-title">¿Necesita ayuda? Cotice o asesorece con nosotros...</h2>

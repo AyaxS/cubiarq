@@ -8,7 +8,11 @@ $( document ).ready(function() {
         $('body,html').stop(true,true).animate({				
             scrollTop: $(strAncla).offset().top
         },1000);
-    });
+	});
+	
+	const header = document.querySelector("#header");
+	const headroom = new Headroom(header);
+    headroom.init();
 
     (function( $ ){
 	    $.animate = function(options) {
@@ -91,18 +95,18 @@ $( document ).ready(function() {
 		  {
 			breakpoint: 768,
 			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '120px',
+			  arrows: true,
+			  centerMode: false,
+			  centerPadding: '0px',
 			  slidesToShow: 1
 			}
 		  },
 		  {
 			breakpoint: 480,
 			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '120px',
+			  arrows: true,
+			  centerMode: false,
+			  centerPadding: '0px',
 			  slidesToShow: 1
 			}
 		  }
@@ -120,46 +124,9 @@ $( document ).ready(function() {
 		cssEase: 'linear'
 	});
 
-	var isMobile = {
-		Android: function() {
-		  return navigator.userAgent.match(/Android/i);
-		},
-		BlackBerry: function() {
-		  return navigator.userAgent.match(/BlackBerry/i);
-		},
-		iOS: function() {
-		  return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-		iPhone: function() {
-			  return navigator.userAgent.match(/iPhone/i);
-		  },
-		iPad: function() {
-			  return navigator.userAgent.match(/iPad/i);
-		  },
-		Opera: function() {
-		  return navigator.userAgent.match(/Opera Mini/i);
-		},
-		Windows: function() {
-		  return navigator.userAgent.match(/IEMobile/i);
-		},
-		any: function() {
-		  return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
-	  
-	//test
-	if ( isMobile.any() ) {
-		$("#canvas").hide();
-		$('.cubi_card-content').css('height', 'auto');
-	}
-	
-	if ( isMobile.iPhone() ) {
-		$("#canvas").hide();
-		$('.cubi_card-content').css('height', 'auto');
-	}
-	
-	if ( isMobile.Android() ) {
-		$("#canvas").hide();
-		$('.cubi_card-content').css('height', 'auto');
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$("canvas").hide();
+		$('.auto--height').css('min-height', '477px');
+		$(".auto--height").css('height', 'auto');
 	}
 });
